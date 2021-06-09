@@ -1549,3 +1549,76 @@ Received Import Request.
 Start importing Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidScene.unity using Guid(1c4ebb5911ce7ff4b9ed43eb6991b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbcf7a3fad9c991dba32b43b3c2ddec') in 0.016042 seconds
   Import took 0.027363 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.933 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1871 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.0 MB.
+System memory in use after: 124.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2523.
+Total: 2.099000 ms (FindLiveObjects: 0.268000 ms CreateObjectMapping: 0.082700 ms MarkObjects: 1.657700 ms  DeleteObjects: 0.089200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 420.493750 seconds.
+  path: Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/MainMenuArkanoid.unity
+  artifactKey: Guid(9661865a579504d45bd821dd8067281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/MainMenuArkanoid.unity using Guid(9661865a579504d45bd821dd8067281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37828908bf013ee884c3bafe4e297ec7') in 0.017464 seconds
+  Import took 0.026291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.371331 seconds.
+  path: Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidMainMenu.unity
+  artifactKey: Guid(9661865a579504d45bd821dd8067281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidMainMenu.unity using Guid(9661865a579504d45bd821dd8067281d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d56e47490e117f469f1c3a8ac1c7fe5') in 0.004431 seconds
+  Import took 0.013843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.553215 seconds.
+  path: Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidScene.unity
+  artifactKey: Guid(1c4ebb5911ce7ff4b9ed43eb6991b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidScene.unity using Guid(1c4ebb5911ce7ff4b9ed43eb6991b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4ca978341994585a5860619fdaae7f') in 0.003626 seconds
+  Import took 0.014556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.697396 seconds.
+  path: Assets/0.2.v/Fonts/3Dventure/3Dventure.ttf
+  artifactKey: Guid(2d0621a287ce50a4fbd8bb8dba3d2039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Fonts/3Dventure/3Dventure.ttf using Guid(2d0621a287ce50a4fbd8bb8dba3d2039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdca5f837ab72099f7d1a2835fec12d6') in 0.086689 seconds
+  Import took 0.096939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/0.2.v/Fonts/Computer Says No/computer-says-no.ttf
+  artifactKey: Guid(a1770be68c8f94249b213f407f4b1b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Fonts/Computer Says No/computer-says-no.ttf using Guid(a1770be68c8f94249b213f407f4b1b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bf3cd808340e3dd9223e4983b0304ff') in 0.015820 seconds
+  Import took 0.026045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Extras/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb2d7af946c0112704041559bdbcb147') in 0.016719 seconds
+  Import took 0.025320 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
