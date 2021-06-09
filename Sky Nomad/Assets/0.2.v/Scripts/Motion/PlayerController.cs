@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody2D>();
         playerCapCol = GetComponent<CapsuleCollider2D>();
         playerCreated = true;
-        nextUuid = "origin";
+        //nextUuid = "origin";
         isTalking = false;
     }
 
@@ -141,6 +141,7 @@ public class PlayerController : MonoBehaviour
         if (!walking)
         {
             _rigidBody.velocity = Vector2.zero;
+            Debug.Log(nextUuid);
         }
 
 #if UNITY_STANDALONE_WIN
@@ -175,5 +176,10 @@ public class PlayerController : MonoBehaviour
     public Vector3 LoadPlayerPosition()
     {
         return new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
+    }
+
+    public string LoadNextUuid()
+    {
+        return PlayerPrefs.GetString("playerNextUuid", "Ha habido algún error");
     }
 }

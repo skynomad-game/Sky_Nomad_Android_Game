@@ -12,12 +12,12 @@ EditorBuildSettings:
     path: Assets/0.2.v/Scenes/UI/Connect.unity
     guid: 55fb0597f6d4b2049a7bca3608ed4398
   - enabled: 1
-    path: Assets/0.2.v/Scenes/UI/Main Menu.unity
-    guid: fd32c23495d6a3548ba48bf1b2c01ace
-  - enabled: 1
     path: Assets/0.2.v/Scenes/UI/Select Player.unity
     guid: 6d8f2d95ca66ba84e86a7c03a7412669
   - enabled: 1
     path: Assets/0.2.v/Scenes/Exteriores/town.unity
-    guid: 82f473e0d53f4d342a2dee42eb9f5dcb
+    guid: 2fc39b1215385dd4586f2cf764b78abf
+  - enabled: 1
+    path: Assets/0.2.v/Scenes/Interiores/House Inside by Andrei.unity
+    guid: ccc88f5d0bec22646903bfd9127e5250
   m_configObjects: {}
