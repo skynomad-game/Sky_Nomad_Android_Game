@@ -33,21 +33,19 @@ public class NPCDialogue : MonoBehaviour
         questManager = FindObjectOfType<QuestManager>();
     }
 
-// Update is called once per frame
-void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if(playerInTheZone && CrossPlatformInputManager.GetButtonDown("Action")){
-        
+        if (playerInTheZone && CrossPlatformInputManager.GetButtonDown("Action"))
+        {
             Debug.Log("Voy a hablar");
-
             string[] finalDialogue = new string[npcDialogueLines.Length];
             //para cada linea de dialogo, recorro todas las lineas de dialogo
             int i = 0;
 
             foreach (string line in npcDialogueLines)
             {
-                    finalDialogue[i++]=  line ;
-
+                finalDialogue[i++] = line;
             }
 
             if (npcSprite != null && !hasQuest)
@@ -66,25 +64,23 @@ void Update()
                     Debug.Log("Ayudame a resolver esta frase");
                     questManager.quests[questId].StartQuest();
                 }
-            }
-            else
-            {
-                dialogueManager.ShowDialogue(finalDialogue);
+                else
+                {
+                    dialogueManager.ShowDialogue(finalDialogue);
+                }
             }
 
             //Si el NPCMovement del padre no es nulo, es decir que si el padre tiene el componente NPCMovement
-            if (gameObject.GetComponentInParent<NPCMovement>()!= null)
+            if (gameObject.GetComponentInParent<NPCMovement>() != null)
             {//entonces modificamos la variable del Componente padre y idicamos que esta hablando
                 gameObject.GetComponentInParent<NPCMovement>().isTalking = true;
             }
-
-
         }
     }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.gameObject.tag.Equals("Player"))
         {
             playerInTheZone = true;

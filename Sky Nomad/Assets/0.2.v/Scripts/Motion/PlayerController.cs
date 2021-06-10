@@ -166,6 +166,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    //cuando va a resolver un enigma
+    //se guarda la última posición conocida en PlayerPrefs
     public void SavePlayerPosition()
     {
         PlayerPrefs.SetFloat("playerPositionX", this.transform.position.x);
@@ -173,8 +175,16 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetFloat("playerPositionZ", this.transform.position.z);
     }
 
+    //se cargará la posición del jugador
     public Vector3 LoadPlayerPosition()
     {
+        Vector3 playerPosition
+        //si la nextUuid que tiene el personaje es "froPuzzle"
+        {
+            Debug.Log("Se va a cargar la última posición conocida");
+        
+        }
+
         return new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
     }
 

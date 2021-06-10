@@ -792,3 +792,86 @@ Received Import Request.
 Start importing Assets/0.2.v/Scripts/Camera/CameraFollow.cs using Guid(4c60cf4e117761b4481ddb39f09b7f8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f15aaf6117aecfc3c692c029d879dc1d') in 0.001933 seconds
   Import took 0.007643 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007912 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.834 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1877 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.7 MB.
+System memory in use after: 136.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2408.
+Total: 2.882800 ms (FindLiveObjects: 0.439600 ms CreateObjectMapping: 0.125400 ms MarkObjects: 2.203400 ms  DeleteObjects: 0.112100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 926.221021 seconds.
+  path: Assets/0.2.v/Scripts/Dialogue
+  artifactKey: Guid(39bb79f9631acd948bda4aba81f2516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scripts/Dialogue using Guid(39bb79f9631acd948bda4aba81f2516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d357ed12d795c60308a6a55ccab9530') in 0.004806 seconds
+  Import took 0.020169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.507501 seconds.
+  path: Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs
+  artifactKey: Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs using Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4786553be34b2f8927ef72f5860e7e08') in 0.002111 seconds
+  Import took 0.008421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs
+  artifactKey: Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs using Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4786553be34b2f8927ef72f5860e7e08') in 0.001717 seconds
+  Import took 0.007184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 426.351677 seconds.
+  path: Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs
+  artifactKey: Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs using Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37a5eacf88d0916edc20fa9c57e442b') in 0.002162 seconds
+  Import took 0.016123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001253 seconds.
+  path: Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs
+  artifactKey: Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scripts/Dialogue/NPCDialogue.cs using Guid(4652a1be23dcfce498576520c25e7e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37a5eacf88d0916edc20fa9c57e442b') in 0.001985 seconds
+  Import took 0.008073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 395.783511 seconds.
+  path: Assets/Minijuegos/Ordenar Frases/SolvePhrase.cs
+  artifactKey: Guid(9782ed30b25c30a4c80ca771009fe20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuegos/Ordenar Frases/SolvePhrase.cs using Guid(9782ed30b25c30a4c80ca771009fe20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac716024b4206f00d4fa98a370931c83') in 0.001836 seconds
+  Import took 0.009039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006052 seconds.
+  path: Assets/Minijuegos/Ordenar Frases/SolvePhrase.cs
+  artifactKey: Guid(9782ed30b25c30a4c80ca771009fe20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Minijuegos/Ordenar Frases/SolvePhrase.cs using Guid(9782ed30b25c30a4c80ca771009fe20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac716024b4206f00d4fa98a370931c83') in 0.001933 seconds
+  Import took 0.007554 seconds .
+
