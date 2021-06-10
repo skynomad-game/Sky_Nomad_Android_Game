@@ -11,6 +11,11 @@ public class Quest : MonoBehaviour
     public bool questStarted;
     private QuestManager questManager;
 
+    public bool phraseQuest;
+    public bool puzzleQuest;
+    public bool platformQuest;
+
+
     public string title;
     public string startText;
 
@@ -37,7 +42,13 @@ public class Quest : MonoBehaviour
     private UIManager uIManager;
 
     public string questScene;
-   
+
+
+    void Start()
+    {
+        questCompleted = CheckQuestCompleted();
+    }
+
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
@@ -192,6 +203,37 @@ public class Quest : MonoBehaviour
         uIManager.ActiveConfirmation(questID);
     }
 
+    private bool CheckQuestCompleted()
+    {
+        Debug.Log("Vamos a determinar si esta completada");
+        int isCompleted = 0;
+        if (phraseQuest || puzzleQuest || platformQuest)
+        {
+            if (phraseQuest)
+            {
+                Debug.Log("La quest número " + questID + "es de resolver frases");
+                isCompleted = PlayerPrefs.GetInt("questFraseCompleted", 0);
+            }
+            else if (puzzleQuest)
+            {
+                Debug.Log("La quest número " + questID + " es de resolver puzles");
+                isCompleted = PlayerPrefs.GetInt("questPuzzleCompleted", 0);
+            }
+            else if (platformQuest)
+            {
+                Debug.Log("La quest número "+questID + " es de plataformas");
+                isCompleted = PlayerPrefs.GetInt("questPlatformCompleted", 0);
+            }
+        }
 
+        if (isCompleted != 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
 
