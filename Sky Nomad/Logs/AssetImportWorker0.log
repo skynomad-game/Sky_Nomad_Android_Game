@@ -139,3 +139,19 @@ Received Import Request.
 Start importing Assets/0.2.v/Scenes/Interiores/casa6.unity using Guid(dfcf3f1895822024cb075c8c7fe7084a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d0b236c5e56373cfad7d134f4abcf8') in 0.003519 seconds
   Import took 0.012254 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 144.268149 seconds.
+  path: Assets/0.2.v/Prefabs/TeleportPoint.prefab
+  artifactKey: Guid(62d8280fcd1481d43bdd0e7aa4f5db8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Prefabs/TeleportPoint.prefab using Guid(62d8280fcd1481d43bdd0e7aa4f5db8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c7c9c57368dd9c9f258818a7031b07') in 0.039899 seconds
+  Import took 0.046814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.239550 seconds.
+  path: Assets/0.2.v/Prefabs/Some Necessary Stuff.prefab
+  artifactKey: Guid(d2890784b25a21d498a818d0e0626f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Prefabs/Some Necessary Stuff.prefab using Guid(d2890784b25a21d498a818d0e0626f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc94109553b2c55bca30b6d2721c629') in 0.194351 seconds
+  Import took 0.204309 seconds .
+
