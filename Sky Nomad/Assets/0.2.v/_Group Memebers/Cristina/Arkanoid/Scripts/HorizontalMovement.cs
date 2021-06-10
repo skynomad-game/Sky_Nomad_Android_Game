@@ -5,7 +5,7 @@ using UnityEngine;
 public class HorizontalMovement : MonoBehaviour
 {
     //Velocidad de Movimiento de la raqueta
-    public float speed = 25;
+    public float speed = 10;
     void FixedUpdate()
     {
         //Obtenemos la cantidad de movimiento en dirección horizontal

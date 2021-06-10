@@ -4,18 +4,37 @@ using UnityEngine;
 
 public class BallArkanoid : MonoBehaviour
 {
-    public float speed = 10;
-    
+    private float speed;
+    public float initialspeed = 5;
+    public GameObject ballStartPosition;
+    public int lives = 3;
+
+    [SerializeField]
+    [Range(1.0f, 2.0f)]
+    public float difficultyFactor = 1.005f;
+
     // Start is called before the first frame update
     void Start()
     {
+        speed = initialspeed;
         //Le damos la velocidad a la bola 
         GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
+        StartCoroutine(UpgrateDifficulty());
+    }
+
+    IEnumerator UpgrateDifficulty() //Coroutina para aumentar la dificultad que espera un segundo y subira la velocidad
+    {
+        while (true) { 
+        yield return new WaitForSeconds(1.0f);
+            // speed += 0.5f;
+            speed *= difficultyFactor;
+        }
     }
 
     //Esta función se llama automáticamente cuando hay una colisión
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        GetComponent<AudioSource>().Play();
         //Comprobamos que el objeto con el que he colisionado es la pala (raqueta)
     if(collision.gameObject.name == "Paddle")
         {
@@ -37,4 +56,23 @@ public class BallArkanoid : MonoBehaviour
     {
         return (ball.x - paddle.x) / paddleWidth;
     }
+
+    public void ResetBall()
+    {
+        lives--; //matar o restar una vida de la pelota
+        speed = initialspeed;
+        transform.position = ballStartPosition.transform.position;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        if (lives > 0) {  //si las vidas son mayores que 0 reseteo la bola
+        Invoke("RestartBallMovement", 2.0f);
+        }
+     
+    }
+
+    void RestartBallMovement()
+    {
+        GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
+    }
+
+   
 }
