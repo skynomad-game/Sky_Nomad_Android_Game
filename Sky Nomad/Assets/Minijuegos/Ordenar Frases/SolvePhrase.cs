@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SolvePhrase : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class SolvePhrase : MonoBehaviour
     public List<GameObject> fichasMoviles;
     public List<GameObject> fichasSolucion;
     public GameObject canvas;
+
+    public string sceneToReturn;
 
     private void Start()
     {
@@ -101,6 +104,9 @@ public class SolvePhrase : MonoBehaviour
                     if (contadorSolucionesCorrectas == fichasMoviles.Count)
                     {
                         Debug.Log("Ganaste");
+                        // aqui el questManager le dirá a la variable booleana questCompleted de la Quest en concreto, que cambie su valor a verdadero
+                        //para que la quest se muestre en veredadero
+                        PlayerPrefs.SetInt("questFraseCompleted", 1);
                         canvas.SetActive(true);
                     }
                     pieza.GetComponent<BoxCollider2D>().enabled = false;
@@ -109,6 +115,8 @@ public class SolvePhrase : MonoBehaviour
                 }
             }
         }
+
+
     }
 
 
@@ -121,4 +129,9 @@ public class SolvePhrase : MonoBehaviour
         permiteJugar = true;
     }
 
+
+    public void ReturnToMainScene()
+    {
+        SceneManager.LoadScene(sceneToReturn);
+    }
 }
