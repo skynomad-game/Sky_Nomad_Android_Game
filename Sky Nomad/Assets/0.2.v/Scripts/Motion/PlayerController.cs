@@ -5,6 +5,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform cameraPos;
+
     public bool canMove = true;
 
     public static bool playerCreated;
@@ -42,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        cameraPos= GameObject.FindObjectOfType<CameraFollow>().transform;
         this.transform.position = LoadPlayerPosition();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
@@ -190,6 +193,8 @@ public class PlayerController : MonoBehaviour
 
             playerStartPosition = new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
 
+            cameraPos.position = new Vector3( PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), cameraPos.position.z);
+
         }
         else
         {
@@ -200,6 +205,7 @@ public class PlayerController : MonoBehaviour
             {
                 Debug.Log("Existe un start position");
                 playerStartPosition = startPoint.transform.position;
+                cameraPos.position = new Vector3(startPoint.transform.position.x, startPoint.transform.position.y, cameraPos.position.z);
                 lastMovement = startPoint.GetComponent<StartPoint>().facingDirection;
             }
             else
@@ -210,7 +216,7 @@ public class PlayerController : MonoBehaviour
                     nextUuid = startPoint.GetComponent<StartPoint>().uuid;
                     Debug.Log("No se ha encontrado ningún con el nombre proporcionado");
                     playerStartPosition = startPoint.transform.position;
-
+                    cameraPos.position = new Vector3(startPoint.transform.position.x, startPoint.transform.position.y, cameraPos.position.z);
                 }
               
             }

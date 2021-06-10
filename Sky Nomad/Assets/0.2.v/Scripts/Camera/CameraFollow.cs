@@ -17,7 +17,7 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         this.transform.position = LoadCameraPosition();
-
+       // transform.position = new Vector3(target.transform.position.x, target.transform.position.y, this.transform.position.z);
     }
 
     public void ChangeLimits(BoxCollider2D cameraLimits)
