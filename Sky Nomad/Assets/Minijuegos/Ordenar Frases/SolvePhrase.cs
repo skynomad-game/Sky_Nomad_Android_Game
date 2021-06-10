@@ -13,16 +13,18 @@ public class SolvePhrase : MonoBehaviour
     bool permiteJugar = false;
 
     public List<GameObject> fichasMoviles;
+
     public List<GameObject> fichasSolucion;
-    public GameObject canvas;
+    public GameObject winPanel;
 
     public string sceneToReturn;
 
     private void Start()
     {
-        Invoke("Desordenar", 2.0f);
-    }
+        //Invoke("Desordenar", 2.0f);
+        permiteJugar = true;
 
+    }
 
     void Update()
     {
@@ -100,14 +102,16 @@ public class SolvePhrase : MonoBehaviour
                     Debug.Log(fichasMoviles.Count);
 
                     contadorSolucionesCorrectas++;
-                    Debug.Log(contadorSolucionesCorrectas);
-                    if (contadorSolucionesCorrectas == fichasMoviles.Count)
+                    Debug.Log("Piezas totales = "+fichasSolucion.Count);
+                    Debug.Log("Soluciones correctas = "+contadorSolucionesCorrectas);
+                    //Si el contador de soluciones correctas es igual al total de piezas entonces se ha ganado
+                    if (contadorSolucionesCorrectas == fichasSolucion.Count)
                     {
                         Debug.Log("Ganaste");
                         // aqui el questManager le dirá a la variable booleana questCompleted de la Quest en concreto, que cambie su valor a verdadero
                         //para que la quest se muestre en veredadero
                         PlayerPrefs.SetInt("questFraseCompleted", 1);
-                        canvas.SetActive(true);
+                        winPanel.SetActive(true);
                     }
                     pieza.GetComponent<BoxCollider2D>().enabled = false;
 
@@ -115,10 +119,7 @@ public class SolvePhrase : MonoBehaviour
                 }
             }
         }
-
-
     }
-
 
     void Desordenar()
     {
@@ -128,7 +129,6 @@ public class SolvePhrase : MonoBehaviour
         }
         permiteJugar = true;
     }
-
 
     public void ReturnToMainScene()
     {

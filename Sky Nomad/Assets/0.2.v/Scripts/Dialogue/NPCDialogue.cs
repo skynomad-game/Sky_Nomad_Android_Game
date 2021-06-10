@@ -66,7 +66,9 @@ public class NPCDialogue : MonoBehaviour
                 }
                 else
                 {
-                    dialogueManager.ShowDialogue(finalDialogue);
+                    dialogueManager.ShowDialogue(finalDialogue, npcSprite);
+
+                    //dialogueManager.ShowDialogue(finalDialogue);
                 }
             }
 

@@ -10,6 +10,7 @@ public class GoToNewPlace : MonoBehaviour
     public string uuid;
     public bool goInside;
     public bool goOutside;
+    public Vector2 facingDirection;
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
@@ -29,8 +30,9 @@ public class GoToNewPlace : MonoBehaviour
 
             FindObjectOfType<PlayerController>().nextUuid = uuid;
             Debug.Log(FindObjectOfType<PlayerController>().nextUuid);
-            PlayerPrefs.SetString("playerNextUuid", FindObjectOfType<PlayerController>().nextUuid);
-            //SceneManager.LoadScene(newPlaceName);
+            PlayerPrefs.SetString("playerNextUuid", uuid);
+            PlayerPrefs.GetString("comeFromquest", "no");
+            SceneManager.LoadScene(newPlaceName);
         }
     }
 

@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
 
     public string nextUuid;
 
+    public bool comeFromQuest;
+
     public CapsuleCollider2D playerCapCol;
 
     void Start()
@@ -178,14 +180,42 @@ public class PlayerController : MonoBehaviour
     //se cargará la posición del jugador
     public Vector3 LoadPlayerPosition()
     {
-        Vector3 playerPosition
+        Vector3 playerStartPosition = Vector3.zero;
+
+		
+        if ( PlayerPrefs.GetString("comeFromquest", "no") == "yes" )
         //si la nextUuid que tiene el personaje es "froPuzzle"
         {
             Debug.Log("Se va a cargar la última posición conocida");
-        
-        }
 
-        return new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
+            playerStartPosition = new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
+
+        }
+        else
+        {
+            //Buesca un GameObject por la escena que tenga el nombre del nextUuid del PlayerController
+            GameObject startPosition = GameObject.Find(LoadNextUuid());
+
+            if (startPosition != null)
+            {
+                Debug.Log("Existe un start position");
+                playerStartPosition = startPosition.transform.position;
+            }
+            else
+            {
+                startPosition = GameObject.Find("origin");
+                if (startPosition != null)
+                {
+                    nextUuid = startPosition.GetComponent<StartPoint>().uuid;
+                    Debug.Log("No se ha encontrado ningún con el nombre proporcionado");
+                    playerStartPosition = startPosition.transform.position;
+
+                }
+              
+            }
+        }
+        return playerStartPosition;
+
     }
 
     public string LoadNextUuid()
