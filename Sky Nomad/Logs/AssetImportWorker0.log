@@ -155,3 +155,46 @@ Received Import Request.
 Start importing Assets/0.2.v/Prefabs/Some Necessary Stuff.prefab using Guid(d2890784b25a21d498a818d0e0626f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc94109553b2c55bca30b6d2721c629') in 0.194351 seconds
   Import took 0.204309 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008427 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 6.81 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.720 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 6.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1877 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.2 MB.
+System memory in use after: 121.1 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2340.
+Total: 1.931300 ms (FindLiveObjects: 0.298200 ms CreateObjectMapping: 0.049600 ms MarkObjects: 1.469200 ms  DeleteObjects: 0.112800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 175.899419 seconds.
+  path: Assets/0.2.v/Prefabs/Grid.prefab
+  artifactKey: Guid(e30d64ef2d3d39d4c8c7d4eb918619a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Prefabs/Grid.prefab using Guid(e30d64ef2d3d39d4c8c7d4eb918619a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337a0f0e7bf015726460ca91c9806fea') in 0.020661 seconds
+  Import took 0.029253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.728049 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa2.unity
+  artifactKey: Guid(6b8fc6eee9786914aa84aee0fda8a491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa2.unity using Guid(6b8fc6eee9786914aa84aee0fda8a491) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd6c061defd752ead4fd218f3af54974') in 0.002226 seconds
+  Import took 0.008209 seconds .
+
