@@ -60,8 +60,6 @@ public class NPCDialogue : MonoBehaviour
                 if (theQuest != null && theQuest.questCompleted == false)
                 {
                     Debug.Log("La mision existe!");
-                    Debug.Log("Ayudame a resolver este puzle");
-                    Debug.Log("Ayudame a resolver esta frase");
                     questManager.quests[questId].StartQuest();
                 }
                 else

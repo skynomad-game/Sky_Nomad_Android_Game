@@ -31,7 +31,7 @@ public class GoToNewPlace : MonoBehaviour
             FindObjectOfType<PlayerController>().nextUuid = uuid;
             Debug.Log(FindObjectOfType<PlayerController>().nextUuid);
             PlayerPrefs.SetString("playerNextUuid", uuid);
-            PlayerPrefs.GetString("comeFromquest", "no");
+            PlayerPrefs.SetString("comeFromquest", "no");
             SceneManager.LoadScene(newPlaceName);
         }
     }

@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 LoadPlayerPosition()
     {
         Vector3 playerStartPosition = Vector3.zero;
-
+        Debug.Log(PlayerPrefs.GetString("comeFromquest", "no"));
 		
         if ( PlayerPrefs.GetString("comeFromquest", "no") == "yes" )
         //si la nextUuid que tiene el personaje es "froPuzzle"
@@ -194,21 +194,22 @@ public class PlayerController : MonoBehaviour
         else
         {
             //Buesca un GameObject por la escena que tenga el nombre del nextUuid del PlayerController
-            GameObject startPosition = GameObject.Find(LoadNextUuid());
+            GameObject startPoint = GameObject.Find(LoadNextUuid());
 
-            if (startPosition != null)
+            if (startPoint != null)
             {
                 Debug.Log("Existe un start position");
-                playerStartPosition = startPosition.transform.position;
+                playerStartPosition = startPoint.transform.position;
+                lastMovement = startPoint.GetComponent<StartPoint>().facingDirection;
             }
             else
             {
-                startPosition = GameObject.Find("origin");
-                if (startPosition != null)
+                startPoint = GameObject.Find("origin");
+                if (startPoint != null)
                 {
-                    nextUuid = startPosition.GetComponent<StartPoint>().uuid;
+                    nextUuid = startPoint.GetComponent<StartPoint>().uuid;
                     Debug.Log("No se ha encontrado ningún con el nombre proporcionado");
-                    playerStartPosition = startPosition.transform.position;
+                    playerStartPosition = startPoint.transform.position;
 
                 }
               

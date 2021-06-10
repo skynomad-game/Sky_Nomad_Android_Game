@@ -211,17 +211,17 @@ public class Quest : MonoBehaviour
         {
             if (phraseQuest)
             {
-                Debug.Log("Esta quest es de resolver frases");
+                Debug.Log("La quest número " + questID + "es de resolver frases");
                 isCompleted = PlayerPrefs.GetInt("questFraseCompleted", 0);
             }
             else if (puzzleQuest)
             {
-                Debug.Log("Esta quest es de resolver puzles");
+                Debug.Log("La quest número " + questID + " es de resolver puzles");
                 isCompleted = PlayerPrefs.GetInt("questPuzzleCompleted", 0);
             }
             else if (platformQuest)
             {
-                Debug.Log("esta quest es de plataformas");
+                Debug.Log("La quest número "+questID + " es de plataformas");
                 isCompleted = PlayerPrefs.GetInt("questPlatformCompleted", 0);
             }
         }

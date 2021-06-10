@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/0.2.v/Scenes/UI/Connect.unity
     guid: 55fb0597f6d4b2049a7bca3608ed4398
   - enabled: 1
+    path: Assets/0.2.v/Scenes/UI/Main Menu.unity
+    guid: 8e033f6b3fb54424c8864b81780ae102
+  - enabled: 1
     path: Assets/0.2.v/Scenes/UI/Select Player.unity
     guid: 6d8f2d95ca66ba84e86a7c03a7412669
   - enabled: 1
@@ -26,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minijuegos/Sliding Tile Puzzle Game/Scenes/SlidingTilePuzzle.unity
     guid: c78156a8d0505db48bc2d754df2cd940
+  - enabled: 1
+    path: Assets/Minijuegos/Ordenar Frases/Scenes/Enigma Frase.unity
+    guid: 6b2ab88fd8a430345b3297b5d281677c
   m_configObjects: {}
