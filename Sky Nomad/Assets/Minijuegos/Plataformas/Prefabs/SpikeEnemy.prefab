@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7828368444792416565}
   - component: {fileID: 659923142581799754}
   - component: {fileID: 9181148913054061459}
+  - component: {fileID: 372519356}
   m_Layer: 0
   m_Name: SpikeEnemy
   m_TagString: Untagged
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -105,6 +107,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 3031271156787511374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 546fa01a80006d94ca29b67e4fda969d, type: 3}
+  m_Script: {fileID: 11500000, guid: 19352c982fc19de459a21defbacdf77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &372519356
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031271156787511374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da11b55ee8840cc4c957d5d2afa0e0f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

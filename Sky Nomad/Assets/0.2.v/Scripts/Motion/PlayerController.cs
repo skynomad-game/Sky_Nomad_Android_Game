@@ -5,6 +5,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform cameraPos;
+
     public bool canMove = true;
 
     public static bool playerCreated;
@@ -36,17 +38,20 @@ public class PlayerController : MonoBehaviour
 
     public string nextUuid;
 
+    public bool comeFromQuest;
+
     public CapsuleCollider2D playerCapCol;
 
     void Start()
     {
+        cameraPos= GameObject.FindObjectOfType<CameraFollow>().transform;
         this.transform.position = LoadPlayerPosition();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody2D>();
         playerCapCol = GetComponent<CapsuleCollider2D>();
         playerCreated = true;
-        nextUuid = "origin";
+        //nextUuid = "origin";
         isTalking = false;
     }
 
@@ -141,6 +146,7 @@ public class PlayerController : MonoBehaviour
         if (!walking)
         {
             _rigidBody.velocity = Vector2.zero;
+            Debug.Log(nextUuid);
         }
 
 #if UNITY_STANDALONE_WIN
@@ -165,6 +171,8 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    //cuando va a resolver un enigma
+    //se guarda la última posición conocida en PlayerPrefs
     public void SavePlayerPosition()
     {
         PlayerPrefs.SetFloat("playerPositionX", this.transform.position.x);
@@ -172,8 +180,53 @@ public class PlayerController : MonoBehaviour
         PlayerPrefs.SetFloat("playerPositionZ", this.transform.position.z);
     }
 
+    //se cargará la posición del jugador
     public Vector3 LoadPlayerPosition()
     {
-        return new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
+        Vector3 playerStartPosition = Vector3.zero;
+        Debug.Log(PlayerPrefs.GetString("comeFromquest", "no"));
+		
+        if ( PlayerPrefs.GetString("comeFromquest", "no") == "yes" )
+        //si la nextUuid que tiene el personaje es "froPuzzle"
+        {
+            Debug.Log("Se va a cargar la última posición conocida");
+
+            playerStartPosition = new Vector3(PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), PlayerPrefs.GetFloat("playerPositionZ", this.transform.position.z));
+
+            cameraPos.position = new Vector3( PlayerPrefs.GetFloat("playerPositionX", this.transform.position.x), PlayerPrefs.GetFloat("playerPositionY", this.transform.position.y), cameraPos.position.z);
+
+        }
+        else
+        {
+            //Buesca un GameObject por la escena que tenga el nombre del nextUuid del PlayerController
+            GameObject startPoint = GameObject.Find(LoadNextUuid());
+
+            if (startPoint != null)
+            {
+                Debug.Log("Existe un start position");
+                playerStartPosition = startPoint.transform.position;
+                cameraPos.position = new Vector3(startPoint.transform.position.x, startPoint.transform.position.y, cameraPos.position.z);
+                lastMovement = startPoint.GetComponent<StartPoint>().facingDirection;
+            }
+            else
+            {
+                startPoint = GameObject.Find("origin");
+                if (startPoint != null)
+                {
+                    nextUuid = startPoint.GetComponent<StartPoint>().uuid;
+                    Debug.Log("No se ha encontrado ningún con el nombre proporcionado");
+                    playerStartPosition = startPoint.transform.position;
+                    cameraPos.position = new Vector3(startPoint.transform.position.x, startPoint.transform.position.y, cameraPos.position.z);
+                }
+              
+            }
+        }
+        return playerStartPosition;
+
+    }
+
+    public string LoadNextUuid()
+    {
+        return PlayerPrefs.GetString("playerNextUuid", "Ha habido algún error");
     }
 }

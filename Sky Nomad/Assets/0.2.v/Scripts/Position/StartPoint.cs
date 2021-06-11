@@ -18,14 +18,20 @@ public class StartPoint : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         theCamera = FindObjectOfType<CameraFollow>();
 
+        //en el caso de que la nextUuid sea nula o no sea igual a la Uuid de este StartPoint se saldrá i no se jecutará el código posterior
+        /*
         if (player.nextUuid == null|| !player.nextUuid.Equals(uuid))
         {
             return;
         }
-        player.transform.position = this.transform.position;
-        theCamera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, theCamera.transform.position.z);
+        */
+        //Si llega a este punto
+        //transforma la posición de jugados a la posición de este StartPoint
+        //player.transform.position = this.transform.position;
+        //la posición de la camara es transformada a la posición X e Y a la misma posición del StartPoint
+        //theCamera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, theCamera.transform.position.z);
 
-        player.lastMovement = facingDirection;
+        //player.lastMovement = facingDirection;
         
     }
 }
