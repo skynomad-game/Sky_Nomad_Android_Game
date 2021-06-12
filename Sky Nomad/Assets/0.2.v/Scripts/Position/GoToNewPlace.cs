@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GoToNewPlace : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class GoToNewPlace : MonoBehaviour
     public bool goInside;
     public bool goOutside;
     public Vector2 facingDirection;
+
+    public GameObject loadingScreen;
+    public TextMeshProUGUI loadingText;
+    public GameObject loadingIcon;
 
     private void OnTriggerEnter2D(Collider2D otherCollider)
     {
@@ -32,8 +37,39 @@ public class GoToNewPlace : MonoBehaviour
             Debug.Log(FindObjectOfType<PlayerController>().nextUuid);
             PlayerPrefs.SetString("playerNextUuid", uuid);
             PlayerPrefs.SetString("comeFromquest", "no");
-            SceneManager.LoadScene(newPlaceName);
+            //SceneManager.LoadScene(newPlaceName);
+            StartCoroutine(GoToNewScene());
         }
     }
+
+
+    public IEnumerator GoToNewScene()
+    {
+        loadingScreen.SetActive(true);
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(newPlaceName);
+
+        asyncLoad.allowSceneActivation = false;
+
+        while (!asyncLoad.isDone)
+        {
+            if (asyncLoad.progress >= .9f)
+            
+            {
+                loadingText.text = "Pulsa para continuar";
+                loadingIcon.SetActive(false);
+
+                if (Input.anyKeyDown)
+                {
+                    asyncLoad.allowSceneActivation = true;
+
+                    Time.timeScale = 1f;
+                }
+            }
+
+            yield return null;
+        }
+    }
+
 
 }
