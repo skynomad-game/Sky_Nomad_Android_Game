@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SolvePhrase : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class SolvePhrase : MonoBehaviour
     public GameObject winPanel;
 
     public string sceneToReturn;
+
+    public GameObject loadingScreen;
+    public TextMeshProUGUI loadingText;
+    public GameObject loadingIcon;
+
 
     private void Start()
     {
@@ -132,6 +138,37 @@ public class SolvePhrase : MonoBehaviour
 
     public void ReturnToMainScene()
     {
-        SceneManager.LoadScene(sceneToReturn);
+        StartCoroutine(ReturnToTheScene());
     }
+
+
+    public IEnumerator ReturnToTheScene()
+    {
+        loadingScreen.SetActive(true);
+
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneToReturn);
+
+        asyncLoad.allowSceneActivation = false;
+
+        while (!asyncLoad.isDone)
+        {
+            if (asyncLoad.progress >= .9f)
+
+            {
+                loadingText.text = "Pulsa para continuar";
+                loadingIcon.SetActive(false);
+
+                if (Input.anyKeyDown)
+                {
+                    asyncLoad.allowSceneActivation = true;
+
+                    Time.timeScale = 1f;
+                }
+            }
+
+            yield return null;
+        }
+    }
+
+
 }

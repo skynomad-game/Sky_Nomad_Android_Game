@@ -528,6 +528,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading Screen 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3716657609072828151, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3716657609358140070, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
       propertyPath: m_Controller
       value: 
