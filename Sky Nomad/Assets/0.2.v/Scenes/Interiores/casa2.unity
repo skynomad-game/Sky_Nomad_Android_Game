@@ -5039,3 +5039,66 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e30d64ef2d3d39d4c8c7d4eb918619a5, type: 3}
+--- !u!1 &264688661914811555 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 264688663540155513, guid: e30d64ef2d3d39d4c8c7d4eb918619a5, type: 3}
+  m_PrefabInstance: {fileID: 264688661914811554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264688661914811556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 264688661854075797, guid: e30d64ef2d3d39d4c8c7d4eb918619a5, type: 3}
+  m_PrefabInstance: {fileID: 264688661914811554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &264688661914811557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 264688662452264869, guid: e30d64ef2d3d39d4c8c7d4eb918619a5, type: 3}
+  m_PrefabInstance: {fileID: 264688661914811554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!19719996 &264688661914811558
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264688661914811555}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!19719996 &264688661914811559
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264688661914811556}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!19719996 &264688661914811560
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264688661914811557}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
