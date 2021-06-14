@@ -56,7 +56,7 @@ public class GoToNewPlace : MonoBehaviour
             if (asyncLoad.progress >= .9f)
             
             {
-                loadingText.text = "Pulsa para continuar";
+                loadingText.text = "Nueva escena cargada \n Pulsa para continuar";
                 loadingIcon.SetActive(false);
 
                 if (Input.anyKeyDown)

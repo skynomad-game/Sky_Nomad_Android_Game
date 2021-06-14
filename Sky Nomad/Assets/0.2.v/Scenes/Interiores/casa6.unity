@@ -8135,6 +8135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading Screen 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3716657609072828151, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
 --- !u!1 &1181140550 stripped
@@ -11656,7 +11660,7 @@ RectTransform:
   - {fileID: 4412367759375476152}
   - {fileID: 7023085112484101688}
   m_Father: {fileID: 7740605273930721150}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -18859,8 +18863,8 @@ RectTransform:
   - {fileID: 6708926319335669968}
   - {fileID: 6708926320802813714}
   - {fileID: 8076357032104636099}
-  - {fileID: 1181140551}
   - {fileID: 4412367758869540657}
+  - {fileID: 1181140551}
   m_Father: {fileID: 6708926320426403288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
