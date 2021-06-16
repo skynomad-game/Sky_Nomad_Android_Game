@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/0.2.v/Scenes/UI/Select Player.unity
     guid: 6d8f2d95ca66ba84e86a7c03a7412669
   - enabled: 1
+    path: Assets/0.2.v/Scenes/Anim/Anim Scene.unity
+    guid: 7cb0c443ff288ce4f95ede0822a3f1b9
+  - enabled: 1
+    path: Assets/0.2.v/Scenes/Interiores/castillo.unity
+    guid: 0f0c71585ffaa32439b0ce0204056d4f
+  - enabled: 1
     path: Assets/0.2.v/Scenes/Exteriores/town.unity
     guid: 2fc39b1215385dd4586f2cf764b78abf
   - enabled: 1
@@ -45,10 +51,7 @@ EditorBuildSettings:
     path: Assets/0.2.v/Scenes/Interiores/casa7.unity
     guid: 4071cd21a34c8f14b9635b37f6dd65cc
   - enabled: 1
-    path: Assets/0.2.v/Scenes/Interiores/castillo.unity
-    guid: 0f0c71585ffaa32439b0ce0204056d4f
-  - enabled: 1
-    path: Assets/0.2.v/Scenes/Interiores/cueva.unity
+    path: Assets/0.2.v/Scenes/Interiores/Cueva.unity
     guid: 381f774e72b82bd43bf1162a69aef810
   - enabled: 1
     path: Assets/Minijuegos/Sliding Tile Puzzle Game/Scenes/SlidingTilePuzzle.unity

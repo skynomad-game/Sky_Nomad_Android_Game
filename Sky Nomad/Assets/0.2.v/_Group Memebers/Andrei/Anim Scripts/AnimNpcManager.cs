@@ -67,13 +67,11 @@ public class AnimNpcManager : MonoBehaviour
 
     }
 
-    public void StopAnimator()
+    public void StartTalking()
     {
         character.GetComponent<Animator>().SetBool("Walking", false);
+        character.Talk();
     }
-
-   
-
 
 
 }
