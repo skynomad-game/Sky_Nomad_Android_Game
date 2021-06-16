@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class AnimManager : MonoBehaviour
 {
@@ -12,10 +13,18 @@ public class AnimManager : MonoBehaviour
     public Image avatarImage;
     public bool dialogueActive;
 
+    public GameObject[] nextAnimNPC;
+
     public string[] dialogueLines;
     public int currentDialogueLine;
 
     private GameObject continueButton;
+
+    public string nextScene;
+
+    public AnimPlayerMngr playerManager;
+
+    int i = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +33,7 @@ public class AnimManager : MonoBehaviour
         dialogueBox.SetActive(false);
         continueButton = GameObject.Find("Continue Button");
         continueButton.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -48,12 +58,29 @@ public class AnimManager : MonoBehaviour
                 avatarImage.enabled = false;
                 dialogueBox.SetActive(false);
                 continueButton.SetActive(false);
+                if (i < nextAnimNPC.Length)
+                {
+                    nextAnimNPC[i].SetActive(true);
+                    i++;
+                }
+               
+                else if (playerManager.goToNextScene == true && dialogueActive == false)
+                {
+                    PlayerPrefs.SetString("introMade", "yes");
+                    SceneManager.LoadScene(nextScene);
+                }
+                Debug.Log(i);
+
             }
             else
             {
                 dialogueText.text = dialogueLines[currentDialogueLine];
             }
+
+          
         }
+
+      
     }
 
     public void ShowDialogue(string[] lines)

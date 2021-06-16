@@ -16,7 +16,7 @@ public class SelectCharacter : MonoBehaviour
 
     public GameObject loadingScreen, loadingIcon;
     public TextMeshProUGUI loadingText;
-    public string townScene;
+    public string introAnimScene;
     public GameObject selectPlayerPanel;
 
 
@@ -119,7 +119,7 @@ public class SelectCharacter : MonoBehaviour
         loadingScreen.SetActive(true);
         //_image.color = new Color32(0, 0, 0, 0);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(townScene);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(introAnimScene);
 
         asyncLoad.allowSceneActivation = false;
 

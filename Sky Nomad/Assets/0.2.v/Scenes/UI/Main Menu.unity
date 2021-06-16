@@ -760,11 +760,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbeef338e5096584c8ee07072e4d4ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Select Player
+  selectScene: Select Player
+  firstLevel: town
   optionsScreen: {fileID: 470355264}
   loadingScreen: {fileID: 1019207973}
   loadingIcon: {fileID: 1019207972}
   loadingText: {fileID: 1019207971}
+  textButtonStart: {fileID: 646239971179453318}
 --- !u!1 &1695379649
 GameObject:
   m_ObjectHideFlags: 0

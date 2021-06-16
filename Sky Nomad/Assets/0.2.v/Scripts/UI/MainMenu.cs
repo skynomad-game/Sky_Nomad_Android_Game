@@ -8,12 +8,26 @@ using TMPro;
 public class MainMenu : MonoBehaviour
 {
 
+    public string selectScene;
+
     public string firstLevel;
 
     public GameObject optionsScreen;
 
     public GameObject loadingScreen, loadingIcon;
     public TextMeshProUGUI loadingText;
+
+    public TextMeshProUGUI textButtonStart;
+
+    private void Start()
+    {
+
+        if (PlayerPrefs.GetString("introMade", "no") == "yes")
+        {
+            textButtonStart.text = "Continuar";
+        }
+    }
+
 
     public void StartGame()
     {
@@ -41,7 +55,14 @@ public void QuitGame()
     {
         loadingScreen.SetActive(true);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(firstLevel);
+        string nextScene = selectScene;   
+
+        if (PlayerPrefs.GetString("introMade", "no") == "yes")
+        {
+            nextScene = firstLevel; 
+        }
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextScene);
+
 
         asyncLoad.allowSceneActivation = false;
 

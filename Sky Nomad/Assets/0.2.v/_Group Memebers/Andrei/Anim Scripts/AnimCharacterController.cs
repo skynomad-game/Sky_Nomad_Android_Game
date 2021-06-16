@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AnimCharacterController : MonoBehaviour
 {
 
-    private Animator _animator;
+    public Animator _animator;
+
+    public TextMeshProUGUI uiCharacterName;
 
     public string npcName /*, npcDialogue*/;
     public string[] npcDialogueLines;
@@ -15,11 +18,14 @@ public class AnimCharacterController : MonoBehaviour
 
     public bool isTalking;
 
+    public Sprite showedSprite;
+
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
-        npcSprite = GetComponent<SpriteRenderer>().sprite;
+        //npcSprite = GetComponent<SpriteRenderer>().sprite;
+        npcSprite = showedSprite;
         dialogueManager = FindObjectOfType<AnimManager>();
         Debug.Log("Soy " +this.gameObject.name);
     }
@@ -56,6 +62,7 @@ public class AnimCharacterController : MonoBehaviour
     public void Talk()
     {
         Debug.Log("Voy a hablar");
+        uiCharacterName.text = npcName;
         string[] finalDialogue = new string[npcDialogueLines.Length];
         //para cada linea de dialogo, recorro todas las lineas de dialogo
         int i = 0;
@@ -80,8 +87,5 @@ public class AnimCharacterController : MonoBehaviour
 
 
     }
-
-
-
 
 }
