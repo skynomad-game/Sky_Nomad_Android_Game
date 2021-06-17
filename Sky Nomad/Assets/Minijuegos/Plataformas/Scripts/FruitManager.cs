@@ -27,7 +27,7 @@ public class FruitManager : MonoBehaviour
 			//SceneManager.LoadScene(scene);
 			//StartCoroutine(Ut);
 			winPanel.SetActive(true);
-			PlayerPrefs.SetInt("questPlatformCompleted", 1);
+			PlayerPrefs.SetString("questPlatformCompleted", "yes");
 			PlayerPrefs.SetString("comeFromquest", "yes");
 
 			StartCoroutine(Utilities.LoadTwoSeconds());
