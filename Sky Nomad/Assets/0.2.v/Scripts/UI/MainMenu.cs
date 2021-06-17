@@ -19,35 +19,37 @@ public class MainMenu : MonoBehaviour
 
     public TextMeshProUGUI textButtonStart;
 
-    private void Start()
-    {
-
-        if (PlayerPrefs.GetString("introMade", "no") == "yes")
-        {
-            textButtonStart.text = "Continuar";
-        }
-    }
-
-
+  
     public void StartGame()
     {
         //SceneManager.LoadScene(firstLevel);
         StartCoroutine(LoadStart());
     }
 
-public void OpenOptions()
-    {
+public void OpenOptions() {
         optionsScreen.SetActive(true);
     }
 
-public void CloseOptions()
-    {
+public void CloseOptions(){
         optionsScreen.SetActive(false);
     }
 
-public void QuitGame()
-    {
+public void QuitGame() {
         Application.Quit();
+    }
+
+    public void RestartPlayerPrefs()
+    {
+        PlayerPrefs.SetString("introMade", "no");
+        PlayerPrefs.SetInt("personajeEscogido", 0);
+        PlayerPrefs.SetString("comeFromquest", "no");
+        PlayerPrefs.SetString("questFraseCompleted", "no");
+        PlayerPrefs.SetString("questPuzzleCompleted", "no");
+        PlayerPrefs.SetString("questPlatformCompleted", "no");
+
+        StartGame();
+
+
     }
 
     //Coroutine for loading screen

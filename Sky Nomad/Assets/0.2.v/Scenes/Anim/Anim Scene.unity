@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &375664551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -365,8 +365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -30, y: -1364.016}
-  m_SizeDelta: {x: 1213.0914, y: 1363.9705}
+  m_AnchoredPosition: {x: -30, y: -1256.8947}
+  m_SizeDelta: {x: 1213.0914, y: 1256.8491}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &859566159
 Animator:
@@ -407,14 +407,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "En una galaxia no muy lejana...\nUn extraterrestre naveg\xE1 por el espacio
-    en su nave a gran velocidad, cuando en de repente un estruendo llam\xF3 su atenci\xF3n.
-    \nAl mirar el panel principal, vio una luz roja parpadeando con un mensaje nada
-    bueno... \nEl soporte vital de la nave estaba comenzando a fallar y tubo que
-    buscar un soluci\xF3n r\xE1pida, miro el mapa gal\xE1ctico y encontr\xF3 un planeta
-    habitado llamado tierra.\n\nPuso rumbo hacia \xE9se planeta de color azul con
-    una luna blanca como el marfil, y al acercarse los motores comenzaron a perder
-    potencia."
+  m_text: "En una galaxia no muy lejana...\r\nUn extraterrestre navega por el espacio
+    en su nave a gran velocidad, cuando de repente un estruendo llam\xF3 su atenci\xF3n.
+    \r\nAl mirar el panel principal, vio una luz roja parpadeando con un mensaje
+    nada bueno... \r\nEl soporte vital de la nave estaba comenzando a fallar y tuvo
+    que buscar una soluci\xF3n r\xE1pida, mir\xF3 el mapa gal\xE1ctico y encontr\xF3
+    un planeta habitado llamado Tierra.\r\nPuso rumbo hacia ese planeta de color
+    azul con una luna blanca como el marfil, y al acercarse los motores comenzaron
+    a perder potencia\u2026\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc2971c0b967e2f47903c92a39f916e6, type: 2}
   m_sharedMaterial: {fileID: -3248357509642207834, guid: dc2971c0b967e2f47903c92a39f916e6, type: 2}
@@ -1350,6 +1350,7 @@ MonoBehaviour:
     hacer la reparaci\xF3n de tu nave"
   - "Para ello deber\xE1 ayudar a los habitantes en las tareas que le pidan"
   - No te preocupes, es parte de su aprendizaje
+  - Nos vemos abajo
   isTalking: 0
   showedSprite: {fileID: 2918201073207663473, guid: cc61bf2cc56d2a84aaeffca6c85316d9, type: 3}
 --- !u!70 &1352489992934255429
@@ -1586,6 +1587,7 @@ MonoBehaviour:
     hacer la reparaci\xF3n de tu nave"
   - "Para ello deber\xE1 ayudar a los habitantes en las tareas que le pidan"
   - No te preocupes, es parte de su aprendizaje
+  - Nos vemos abajo
   isTalking: 0
   showedSprite: {fileID: 2918201073207663473, guid: cc61bf2cc56d2a84aaeffca6c85316d9, type: 3}
 --- !u!70 &1352489993923137429
@@ -83923,6 +83925,7 @@ MonoBehaviour:
     hacer la reparaci\xF3n de tu nave"
   - "Para ello deber\xE1 ayudar a los habitantes en las tareas que le pidan"
   - No te preocupes, es parte de su aprendizaje
+  - Nov vemos abajo
   isTalking: 0
   showedSprite: {fileID: 2918201073207663473, guid: cc61bf2cc56d2a84aaeffca6c85316d9, type: 3}
 --- !u!4 &7056684137341979816
@@ -83934,7 +83937,7 @@ Transform:
   m_GameObject: {fileID: 7056684137341979812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.413, y: 3.94, z: 0}
-  m_LocalScale: {x: 1, y: 1.02, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1352489993198128619}
   m_RootOrder: 0
@@ -84079,7 +84082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7674924670727976800
 MonoBehaviour:
   m_ObjectHideFlags: 0

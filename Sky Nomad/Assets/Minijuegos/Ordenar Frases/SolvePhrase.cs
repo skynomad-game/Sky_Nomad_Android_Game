@@ -116,7 +116,7 @@ public class SolvePhrase : MonoBehaviour
                         Debug.Log("Ganaste");
                         // aqui el questManager le dirá a la variable booleana questCompleted de la Quest en concreto, que cambie su valor a verdadero
                         //para que la quest se muestre en veredadero
-                        PlayerPrefs.SetInt("questFraseCompleted", 1);
+                        PlayerPrefs.SetString("questFraseCompleted", "yes");
                         winPanel.SetActive(true);
                     }
                     pieza.GetComponent<BoxCollider2D>().enabled = false;

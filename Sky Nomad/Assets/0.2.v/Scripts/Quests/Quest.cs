@@ -14,6 +14,7 @@ public class Quest : MonoBehaviour
     public bool phraseQuest;
     public bool puzzleQuest;
     public bool platformQuest;
+    public bool arknoidQuest;
 
 
     public string title;
@@ -206,27 +207,32 @@ public class Quest : MonoBehaviour
     private bool CheckQuestCompleted()
     {
         Debug.Log("Vamos a determinar si esta completada");
-        int isCompleted = 0;
+        string isCompleted = "no";
         if (phraseQuest || puzzleQuest || platformQuest)
         {
             if (phraseQuest)
             {
                 Debug.Log("La quest número " + questID + "es de resolver frases");
-                isCompleted = PlayerPrefs.GetInt("questFraseCompleted", 0);
+                isCompleted = PlayerPrefs.GetString("questFraseCompleted", "no");
             }
             else if (puzzleQuest)
             {
                 Debug.Log("La quest número " + questID + " es de resolver puzles");
-                isCompleted = PlayerPrefs.GetInt("questPuzzleCompleted", 0);
+                isCompleted = PlayerPrefs.GetString("questPuzzleCompleted", "no");
             }
             else if (platformQuest)
             {
                 Debug.Log("La quest número "+questID + " es de plataformas");
-                isCompleted = PlayerPrefs.GetInt("questPlatformCompleted", 0);
+                isCompleted = PlayerPrefs.GetString("questPlatformCompleted", "no");
+            }
+            else if (arknoidQuest)
+            {
+                Debug.Log("La quest número " + questID + " es de Arkknoid");
+                isCompleted = PlayerPrefs.GetString("questArkanoidCompleted", "no");
             }
         }
 
-        if (isCompleted != 0)
+        if (isCompleted != "no")
         {
             return true;
         }
