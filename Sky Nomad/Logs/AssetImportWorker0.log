@@ -15,11 +15,11 @@ D:/Usuarios/Natal/Documentos/GitHub/Sky_Nomad_Android_Game/Sky Nomad
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50121
+51004
 Successfully changed project path to: D:/Usuarios/Natal/Documentos/GitHub/Sky_Nomad_Android_Game/Sky Nomad
 D:/Usuarios/Natal/Documentos/GitHub/Sky_Nomad_Android_Game/Sky Nomad
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 1877.32 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2746.17 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path D:/Unity Projects/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,48 +35,120 @@ Initialize mono
 Mono path[0] = 'D:/Unity Projects/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Projects/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Projects/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56948
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Projects/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002010 seconds.
+Registered in 0.004709 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1265.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 2926.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.308 seconds
+- Completed reload, in  6.475 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012094 seconds.
+Registered in 0.027375 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3873.41 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 3340.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in 10.507 seconds
+- Completed reload, in  8.120 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 20.16 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.27 seconds
+Refreshing native plugins compatible for Editor in 13.81 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1891 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 121.3 MB.
-System memory in use after: 121.4 MB.
+System memory in use after: 121.3 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2338.
-Total: 4.970200 ms (FindLiveObjects: 0.664800 ms CreateObjectMapping: 0.548100 ms MarkObjects: 3.628000 ms  DeleteObjects: 0.127800 ms)
+Total: 29.863800 ms (FindLiveObjects: 0.435300 ms CreateObjectMapping: 0.108000 ms MarkObjects: 29.198100 ms  DeleteObjects: 0.120400 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/0.2.v
+  artifactKey: Guid(f8f5a4724b0ddce409e227327e42b9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v using Guid(f8f5a4724b0ddce409e227327e42b9f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86a4247f8020697deb02332747f9f26') in 0.019749 seconds
+  Import took 0.049512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/0.2.v/Scenes
+  artifactKey: Guid(50fdd7af8a47ff6418402f69e1145782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes using Guid(50fdd7af8a47ff6418402f69e1145782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60615dac142ab2cf69904948262e16e') in 0.015611 seconds
+  Import took 0.026287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa 6.unity
+  artifactKey: Guid(ccc88f5d0bec22646903bfd9127e5250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa 6.unity using Guid(ccc88f5d0bec22646903bfd9127e5250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe6bfde132f33959af29ee2e8db02b3') in 0.030352 seconds
+  Import took 0.039001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
   path: Assets/0.2.v/Scenes/Interiores/casa5.unity
   artifactKey: Guid(5a3535c023943ac489f85243ce6ca1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/0.2.v/Scenes/Interiores/casa5.unity using Guid(5a3535c023943ac489f85243ce6ca1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba6620b13fe7369177aebf24c2e8966') in 0.135855 seconds
-  Import took 0.158494 seconds .
+Start importing Assets/0.2.v/Scenes/Interiores/casa5.unity using Guid(5a3535c023943ac489f85243ce6ca1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba6620b13fe7369177aebf24c2e8966') in 0.041768 seconds
+  Import took 0.089651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/0.2.v/Scenes/Interiores
+  artifactKey: Guid(c68fd4bcb86b829428a49927310b2141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores using Guid(c68fd4bcb86b829428a49927310b2141) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50494bf53ec4cd398d60d7eb41a95a0') in 0.014661 seconds
+  Import took 0.022869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 263.618326 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa1.unity
+  artifactKey: Guid(543df08356813ad4da7ffa4beb89bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa1.unity using Guid(543df08356813ad4da7ffa4beb89bc64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ae1671c1bcde81483500430a64a997') in 0.013739 seconds
+  Import took 0.023682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.551607 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/castillo.unity
+  artifactKey: Guid(0f0c71585ffaa32439b0ce0204056d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/castillo.unity using Guid(0f0c71585ffaa32439b0ce0204056d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda079baa081789cc19f440fec753f94') in 0.013490 seconds
+  Import took 0.022836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.431302 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa5.unity
+  artifactKey: Guid(5a3535c023943ac489f85243ce6ca1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa5.unity using Guid(5a3535c023943ac489f85243ce6ca1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f20646728fa87f373c8a46536b2467') in 0.003533 seconds
+  Import took 0.012352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.198963 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa4.unity
+  artifactKey: Guid(031054b0da362c34dac83c09d8b1f7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa4.unity using Guid(031054b0da362c34dac83c09d8b1f7eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef2412e48d50350503ff5cc1b957600') in 0.013569 seconds
+  Import took 0.023137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.480791 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/casa 7.unity
+  artifactKey: Guid(24ea0b8f8eeff3342b6f1db12336695f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/casa 7.unity using Guid(24ea0b8f8eeff3342b6f1db12336695f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543e661c4015f052d050150f6214d4b2') in 0.012519 seconds
+  Import took 0.021921 seconds .
 
