@@ -23,7 +23,8 @@ public class PLayerChekPoint : MonoBehaviour
     }
     public void PlayerDamaged()
     {
-        animator.Play("hit");
+        //animator.Play("hit");
+        animator.SetTrigger("Hit");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
    

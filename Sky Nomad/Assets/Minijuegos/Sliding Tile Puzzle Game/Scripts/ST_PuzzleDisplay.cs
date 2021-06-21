@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ST_PuzzleDisplay : MonoBehaviour 
 {
 	private PuzleManager puzleManager;
+	public GameObject winPanel;
 
 	// esta textura de rompecabezas.
 	public Texture PuzzleImage;
@@ -239,8 +240,9 @@ public class ST_PuzzleDisplay : MonoBehaviour
 		{
 			// puzzle completado correctamente
 			Debug.Log("Puzzle Completado!");
+			winPanel.SetActive(true);
 			//SceneManager.LoadScene("town");
-			puzleManager.Return();
+			//puzleManager.Return();
 		}
 
 		yield return null;
