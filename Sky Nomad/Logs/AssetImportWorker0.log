@@ -1434,3 +1434,410 @@ Total: 1.957200 ms (FindLiveObjects: 0.211400 ms CreateObjectMapping: 0.043600 m
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008283 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.962 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 13.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2521.
+Total: 2.468600 ms (FindLiveObjects: 0.363100 ms CreateObjectMapping: 0.124900 ms MarkObjects: 1.863700 ms  DeleteObjects: 0.115200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008755 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2525.
+Total: 2.475900 ms (FindLiveObjects: 0.381000 ms CreateObjectMapping: 0.122000 ms MarkObjects: 1.849200 ms  DeleteObjects: 0.121800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 1990.438906 seconds.
+  path: Assets/0.2.v/Scenes/Interiores/castillo.unity
+  artifactKey: Guid(0f0c71585ffaa32439b0ce0204056d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Interiores/castillo.unity using Guid(0f0c71585ffaa32439b0ce0204056d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '082e488a111a0d705aad73e98e616f95') in 0.010294 seconds
+  Import took 0.020635 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018059 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 8.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 8.18 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2529.
+Total: 2.210400 ms (FindLiveObjects: 0.279400 ms CreateObjectMapping: 0.052600 ms MarkObjects: 1.753000 ms  DeleteObjects: 0.124200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018003 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.82 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2533.
+Total: 2.219600 ms (FindLiveObjects: 0.235000 ms CreateObjectMapping: 0.045000 ms MarkObjects: 1.739600 ms  DeleteObjects: 0.198500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008762 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 9.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2537.
+Total: 2.881100 ms (FindLiveObjects: 0.257300 ms CreateObjectMapping: 0.057700 ms MarkObjects: 2.422200 ms  DeleteObjects: 0.142700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008371 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.900 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.80 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2541.
+Total: 2.384800 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.085900 ms MarkObjects: 1.914800 ms  DeleteObjects: 0.111100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 682.989725 seconds.
+  path: Assets/0.2.v/Scenes/Exteriores/town.unity
+  artifactKey: Guid(2fc39b1215385dd4586f2cf764b78abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/0.2.v/Scenes/Exteriores/town.unity using Guid(2fc39b1215385dd4586f2cf764b78abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e370048902adb8d1f4dccab64e464545') in 0.010940 seconds
+  Import took 0.018202 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008419 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 8.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.317 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 8.58 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2545.
+Total: 2.994300 ms (FindLiveObjects: 0.275000 ms CreateObjectMapping: 0.042600 ms MarkObjects: 2.558600 ms  DeleteObjects: 0.116400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008499 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.86 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2549.
+Total: 2.266300 ms (FindLiveObjects: 0.261500 ms CreateObjectMapping: 0.044100 ms MarkObjects: 1.800400 ms  DeleteObjects: 0.158800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008560 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 7.95 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.939 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.85 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1888 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.8 MB.
+System memory in use after: 125.8 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 2.431000 ms (FindLiveObjects: 0.363000 ms CreateObjectMapping: 0.122700 ms MarkObjects: 1.831500 ms  DeleteObjects: 0.110700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 9.15 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.2 MB.
+System memory in use after: 88.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2553.
+Total: 2.830300 ms (FindLiveObjects: 0.288000 ms CreateObjectMapping: 0.102600 ms MarkObjects: 2.268900 ms  DeleteObjects: 0.168300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 834.774486 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/1Strings
+  artifactKey: Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/1Strings using Guid(ed80cc2ffe89ae94db2eee08836ca3e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df864698fc68cc3d4ee6155e3430927') in 0.003086 seconds
+  Import took 0.013013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078258 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings.wav
+  artifactKey: Guid(b4e03b819912ca746b68c6610bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings.wav using Guid(b4e03b819912ca746b68c6610bd537b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf24ab135492157d664ceff2f6ad4540') in 0.053391 seconds
+  Import took 0.059944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings1.wav
+  artifactKey: Guid(631b1702899f12f4787890ce6c4912b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings1.wav using Guid(631b1702899f12f4787890ce6c4912b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f98ab8ca644590e81b62273d6838ac3f') in 0.011395 seconds
+  Import took 0.016929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings2.wav
+  artifactKey: Guid(603001d590a40ff468c947f3c96a4ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings2.wav using Guid(603001d590a40ff468c947f3c96a4ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3db604a0a069bfa5256d072bb19746f') in 0.009692 seconds
+  Import took 0.015860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings3.wav
+  artifactKey: Guid(a98a2050900001c4682a518b5c3fd5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/1Strings/Strings3.wav using Guid(a98a2050900001c4682a518b5c3fd5f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abec90ef41180900036bcdca289b5b06') in 0.013221 seconds
+  Import took 0.019336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.808321 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/2Woodwinds
+  artifactKey: Guid(89104b6bdd9123948828731a10e8ac98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/2Woodwinds using Guid(89104b6bdd9123948828731a10e8ac98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f245d2c104519a4b58870b0d18e79af4') in 0.002141 seconds
+  Import took 0.018243 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.685401 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano
+  artifactKey: Guid(ee949642441e88c4a8ddc2b3327aa208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano using Guid(ee949642441e88c4a8ddc2b3327aa208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ffe04b15d1f53ecde39fa3270c7a12') in 0.002240 seconds
+  Import took 0.016314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.069414 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano.wav
+  artifactKey: Guid(caf04ce96f2fb5143b09f570ac3cd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano.wav using Guid(caf04ce96f2fb5143b09f570ac3cd563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa22a3c7684f13e3fa06d075f4988b6') in 0.011451 seconds
+  Import took 0.017712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano4.wav
+  artifactKey: Guid(adbb8769396311c439a773d4679dca13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano4.wav using Guid(adbb8769396311c439a773d4679dca13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093657a9ad59cf59c1179b9483e7174c') in 0.010912 seconds
+  Import took 0.017304 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano1.wav
+  artifactKey: Guid(537f9e2b44abc864b9038be47416abbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano1.wav using Guid(537f9e2b44abc864b9038be47416abbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d9f279180f0749463f1fdb15cf3a01') in 0.010720 seconds
+  Import took 0.016999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano2.wav
+  artifactKey: Guid(824f33afe798f2842ae31de52ce5dea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano2.wav using Guid(824f33afe798f2842ae31de52ce5dea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c153d40e7bc41b49ec5a2cb105c35d') in 0.011700 seconds
+  Import took 0.017198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano5.wav
+  artifactKey: Guid(52e62089777204e4d87d2edeaf2ef836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano5.wav using Guid(52e62089777204e4d87d2edeaf2ef836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669c799579f6c881ebfdc343d0935822') in 0.010446 seconds
+  Import took 0.015826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano3.wav
+  artifactKey: Guid(d06561493678fea4f8cb936d5905277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/3Piano/Piano3.wav using Guid(d06561493678fea4f8cb936d5905277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0707a9d1c33cd93237a48ac2dcd67a') in 0.010512 seconds
+  Import took 0.016794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.074406 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/Harp
+  artifactKey: Guid(ef1a4862bbfaf7c4db26dab72c6d6bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/Harp using Guid(ef1a4862bbfaf7c4db26dab72c6d6bfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe15692e6f45ed16dd78261df690acd') in 0.002373 seconds
+  Import took 0.018491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048201 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/Harp/Harp.wav
+  artifactKey: Guid(11b09517fdaa84e4484afe4d3ea847f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/Harp/Harp.wav using Guid(11b09517fdaa84e4484afe4d3ea847f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c028ed33a56c322b12871e7a14d64b36') in 0.011340 seconds
+  Import took 0.017306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/Harp/Harp1.wav
+  artifactKey: Guid(79667ccf5dba62c4dbee562e6bec6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/Harp/Harp1.wav using Guid(79667ccf5dba62c4dbee562e6bec6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83721270e751ac55ebbcfa16db27a699') in 0.012855 seconds
+  Import took 0.018760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Extras/Free Ambient Instrumental Music/Harp/Harp2.wav
+  artifactKey: Guid(48ea6c42dac01d64e9ef2a2aec245c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Extras/Free Ambient Instrumental Music/Harp/Harp2.wav using Guid(48ea6c42dac01d64e9ef2a2aec245c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168d77a36495a0ea3c05e449f848d0ab') in 0.010734 seconds
+  Import took 0.016648 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

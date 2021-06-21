@@ -1120,10 +1120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ee0187276660a4c8c01d244f0b0e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.6
   isTalking: 0
-  walkTime: 1
-  waitTime: 3
+  walkTime: 1.4
+  waitTime: 2.3
   facingDirection: {x: 0, y: 0}
   villagerZone: {fileID: 1449226914496422664}
 --- !u!50 &1449226914866847925
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   hasQuest: 0
   questId: 0
   questManager: {fileID: 0}
-  npcDialogoName: {fileID: 0}
+  npcDialogoName: {fileID: 3004643598710662637}
   playerController: {fileID: 0}
 --- !u!58 &1449226914869817514
 CircleCollider2D:
@@ -1695,8 +1695,8 @@ RectTransform:
   - {fileID: 3204909532229762445}
   - {fileID: 3204909532973935183}
   - {fileID: 104778107609142174}
-  - {fileID: 1334607606}
   - {fileID: 5502032967601148524}
+  - {fileID: 1334607606}
   m_Father: {fileID: 3204909533287430277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27599,14 +27599,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4652a1be23dcfce498576520c25e7e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Tesla
+  npcName: Neil deGrasse
   npcDialogueLines:
   - "La ciencia es una empresa cooperativa, que se extiende de generaci\xF3n en generaci\xF3n"
-  npcSprite: {fileID: -3198313542171876178, guid: 1f5b7e4ece438984f8010b52de0e3397, type: 3}
+  npcSprite: {fileID: 1118084689066731816, guid: 1180ad8b84ac1f94cb982ec12de0c2ad, type: 3}
   hasQuest: 0
   questId: 0
   questManager: {fileID: 0}
-  npcDialogoName: {fileID: 0}
+  npcDialogoName: {fileID: 3004643598710662637}
   playerController: {fileID: 0}
 --- !u!58 &4653770335175780665
 CircleCollider2D:
@@ -27795,10 +27795,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ee0187276660a4c8c01d244f0b0e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.6
   isTalking: 0
-  walkTime: 1
-  waitTime: 3
+  walkTime: 3
+  waitTime: 5
   facingDirection: {x: 0, y: 0}
   villagerZone: {fileID: 4653770335353966078}
 --- !u!50 &4653770335579309913
@@ -29042,7 +29042,7 @@ RectTransform:
   - {fileID: 5502032968239208677}
   - {fileID: 1159613678797325157}
   m_Father: {fileID: 1877125490409675299}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -30947,16 +30947,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4652a1be23dcfce498576520c25e7e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcName: Tesla
+  npcName: Karl Sagan
   npcDialogueLines:
   - "Cada uno de nosotros es una preciosidad, en una perspectiva c\xF3smica."
   - "Si alguien discrepa de tus opiniones, d\xE9jalo vivir."
   - "En un trill\xF3n de galaxias, no hallar\xEDas otro igual."
-  npcSprite: {fileID: -3198313542171876178, guid: 1f5b7e4ece438984f8010b52de0e3397, type: 3}
+  npcSprite: {fileID: -5247797968557111841, guid: d40dcfba898449744b01935f396dc0bb, type: 3}
   hasQuest: 0
   questId: 0
   questManager: {fileID: 0}
-  npcDialogoName: {fileID: 0}
+  npcDialogoName: {fileID: 3004643598710662637}
   playerController: {fileID: 0}
 --- !u!4 &7938517849664263842
 Transform:
@@ -31079,10 +31079,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ee0187276660a4c8c01d244f0b0e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.7
   isTalking: 0
-  walkTime: 1
-  waitTime: 3
+  walkTime: 3.2
+  waitTime: 6
   facingDirection: {x: 0, y: 0}
   villagerZone: {fileID: 7938517849664263853}
 --- !u!1 &7938517849912679438
@@ -31590,7 +31590,7 @@ MonoBehaviour:
   hasQuest: 0
   questId: 0
   questManager: {fileID: 0}
-  npcDialogoName: {fileID: 0}
+  npcDialogoName: {fileID: 3004643598710662637}
   playerController: {fileID: 0}
 --- !u!58 &8263823341147494787
 CircleCollider2D:
@@ -31708,10 +31708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ee0187276660a4c8c01d244f0b0e17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.3
   isTalking: 0
-  walkTime: 1
-  waitTime: 3
+  walkTime: 0.6
+  waitTime: 2.3
   facingDirection: {x: 0, y: 0}
   villagerZone: {fileID: 8263823341300530500}
 --- !u!50 &8263823341551237091
