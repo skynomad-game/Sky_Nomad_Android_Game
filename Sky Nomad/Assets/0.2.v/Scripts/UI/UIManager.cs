@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Text;
+using UnityStandardAssets.CrossPlatformInput;
+
 
 public class UIManager : MonoBehaviour
 {
@@ -35,8 +37,8 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*
-        if (Input.GetKeyDown(KeyCode.I))
+
+        if ( CrossPlatformInputManager.GetButtonDown("Inventory"))
         {
             ToggleInventory();
         }
@@ -45,7 +47,7 @@ public class UIManager : MonoBehaviour
         //playerHealthBar.value = playerHealthManager.Health;
 
         //StringBuilder funciona por el patron del contructor de programacion
-        StringBuilder stringBuilder = new StringBuilder().
+       /* StringBuilder stringBuilder = new StringBuilder().
             //Asi es como funciona el patron del constructor
             Append("HP: ").
             Append(playerHealthManager.Health).
