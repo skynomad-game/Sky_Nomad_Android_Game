@@ -12,7 +12,7 @@ public class QuestItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Player")) {
+        if (collision.gameObject.tag.Equals("Player")) {
             questManager = FindObjectOfType<QuestManager>();
             itemManager = FindObjectOfType<ItemsManager>();
             Quest theQuest = questManager.QuestWithID(questID);
