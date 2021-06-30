@@ -28,6 +28,8 @@ public class Quest : MonoBehaviour
     public Sprite npcSprite;
 
     public bool needsItem;
+    public bool playerHasItem;
+
     public List<QuestItem> itemsNeeded;
 
     public bool killsEnemy;
@@ -49,7 +51,10 @@ public class Quest : MonoBehaviour
 
     void Start()
     {
+
         questCompleted = CheckQuestCompleted();
+        questManager = FindObjectOfType<QuestManager>();
+
         if (questCompleted && this.gameObject.activeInHierarchy)
         {
             CompleteQuest();
@@ -169,8 +174,10 @@ public class Quest : MonoBehaviour
             }
             if(itemsNeeded.Count == 0)
             {
-                Debug.Log("Mision ompletada");
-                CompleteQuest();
+                // Debug.Log("Mision ompletada");
+                //CompleteQuest();
+                playerHasItem = true;
+                questCompleted = true;
             }
         }
 

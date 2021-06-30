@@ -12,7 +12,10 @@ public class QuestItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("EAlgo ha entrado!");
+
         if (collision.gameObject.tag.Equals("Player")) {
+            Debug.Log("El jugador ha entrado!");
             questManager = FindObjectOfType<QuestManager>();
             itemManager = FindObjectOfType<ItemsManager>();
             Quest theQuest = questManager.QuestWithID(questID);
