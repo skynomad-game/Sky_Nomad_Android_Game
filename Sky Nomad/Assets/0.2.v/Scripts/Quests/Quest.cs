@@ -14,7 +14,7 @@ public class Quest : MonoBehaviour
     public bool phraseQuest;
     public bool puzzleQuest;
     public bool platformQuest;
-    public bool arknoidQuest;
+    public bool arkanoidQuest;
 
 
     public string title;
@@ -28,6 +28,8 @@ public class Quest : MonoBehaviour
     public Sprite npcSprite;
 
     public bool needsItem;
+    public bool playerHasItem;
+
     public List<QuestItem> itemsNeeded;
 
     public bool killsEnemy;
@@ -44,10 +46,19 @@ public class Quest : MonoBehaviour
 
     public string questScene;
 
+    public GameObject itemLogro;
+
 
     void Start()
     {
+
         questCompleted = CheckQuestCompleted();
+        questManager = FindObjectOfType<QuestManager>();
+
+        if (questCompleted && this.gameObject.activeInHierarchy)
+        {
+            CompleteQuest();
+        }
     }
 
     private void OnDisable()
@@ -163,8 +174,10 @@ public class Quest : MonoBehaviour
             }
             if(itemsNeeded.Count == 0)
             {
-                Debug.Log("Mision ompletada");
-                CompleteQuest();
+                // Debug.Log("Mision ompletada");
+                //CompleteQuest();
+                playerHasItem = true;
+                questCompleted = true;
             }
         }
 
@@ -208,7 +221,7 @@ public class Quest : MonoBehaviour
     {
         Debug.Log("Vamos a determinar si esta completada");
         string isCompleted = "no";
-        if (phraseQuest || puzzleQuest || platformQuest)
+        if (phraseQuest || puzzleQuest || platformQuest || arkanoidQuest)
         {
             if (phraseQuest)
             {
@@ -225,9 +238,9 @@ public class Quest : MonoBehaviour
                 Debug.Log("La quest número "+questID + " es de plataformas");
                 isCompleted = PlayerPrefs.GetString("questPlatformCompleted", "no");
             }
-            else if (arknoidQuest)
+            else if (arkanoidQuest)
             {
-                Debug.Log("La quest número " + questID + " es de Arkknoid");
+                Debug.Log("La quest número " + questID + " es de Arkanoid");
                 isCompleted = PlayerPrefs.GetString("questArkanoidCompleted", "no");
             }
         }

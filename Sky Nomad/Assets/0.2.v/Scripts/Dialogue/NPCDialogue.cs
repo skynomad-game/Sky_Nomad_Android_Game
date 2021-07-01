@@ -68,7 +68,14 @@ public class NPCDialogue : MonoBehaviour
 
                     //dialogueManager.ShowDialogue(finalDialogue);
                 }
+
+                if (theQuest.playerHasItem)
+                {
+                    theQuest.CompleteQuest();
+                }
             }
+
+           
 
             //Si el NPCMovement del padre no es nulo, es decir que si el padre tiene el componente NPCMovement
             if (gameObject.GetComponentInParent<NPCMovement>() != null)
@@ -85,6 +92,8 @@ public class NPCDialogue : MonoBehaviour
         {
             playerInTheZone = true;
             npcDialogoName.text = npcName;
+            playerController.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
+            playerController.gameObject.GetComponent<CircleCollider2D>().enabled = true;
             //playerController.playerCapCol.isTrigger = true;
             Debug.Log("El jugador esta en la zona");
         }
@@ -96,7 +105,8 @@ public class NPCDialogue : MonoBehaviour
         {
             playerInTheZone = false;
             //playerController.playerCapCol.isTrigger = false;
-
+            playerController.gameObject.GetComponent<CapsuleCollider2D>().enabled = true;
+            playerController.gameObject.GetComponent<CircleCollider2D>().enabled = false;
             Debug.Log("El jugador ya no esta en la zona");
         }
     }
