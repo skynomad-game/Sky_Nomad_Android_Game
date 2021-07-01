@@ -16,7 +16,7 @@ public class SelectCharacter : MonoBehaviour
 
     public GameObject loadingScreen, loadingIcon;
     public TextMeshProUGUI loadingText;
-    public string townScene;
+    public string introAnimScene;
     public GameObject selectPlayerPanel;
 
 
@@ -94,7 +94,7 @@ public class SelectCharacter : MonoBehaviour
             text.text = characterChoice;
             PlayerPrefs.GetInt("personajeEscogido", 0);
             Debug.Log("Se ha escogido a " +PlayerPrefs.GetInt("personajeEscogido", 0));
-            SceneManager.LoadScene("town");
+            //SceneManager.LoadScene("town");
           StartCoroutine(LoadMain());
         }
        
@@ -114,11 +114,12 @@ public class SelectCharacter : MonoBehaviour
 
    public IEnumerator LoadMain()
     {
-        loadingScreen.SetActive(true);
         selectPlayerPanel.SetActive(false);
+
+        loadingScreen.SetActive(true);
         //_image.color = new Color32(0, 0, 0, 0);
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(townScene);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(introAnimScene);
 
         asyncLoad.allowSceneActivation = false;
 

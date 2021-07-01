@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class HorizontalMovement : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class HorizontalMovement : MonoBehaviour
     {
         //Obtenemos la cantidad de movimiento en dirección horizontal
         float h = Input.GetAxisRaw("Horizontal");
+        h = CrossPlatformInputManager.GetAxis("Horizontal");
 
         //Accedemos al Rigidbody2D de la raqueta
         //Voy siempre a la derecha X la dirección que el usuario haya introducido (1 derecha, 0 quieto, -1 izquierda) X la velocidad 

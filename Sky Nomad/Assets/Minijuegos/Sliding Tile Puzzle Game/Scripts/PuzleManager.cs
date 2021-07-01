@@ -13,7 +13,7 @@ public class PuzleManager : MonoBehaviour
 	
 	public void Return()
 	{
-		PlayerPrefs.SetInt("questPuzzleCompleted", 1);
+		PlayerPrefs.SetString("questPuzzleCompleted", "yes");
 		PlayerPrefs.SetString("comeFromquest", "yes");
 	
 		StartCoroutine(ReturnToMain());

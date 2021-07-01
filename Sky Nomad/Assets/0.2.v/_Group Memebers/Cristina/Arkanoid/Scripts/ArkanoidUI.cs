@@ -13,6 +13,8 @@ public class ArkanoidUI : MonoBehaviour
     private float gameTime = 0.0f; 
     BallArkanoid ball;
 
+    public string goToScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,12 @@ public class ArkanoidUI : MonoBehaviour
 
     void GoToMainMenuMiniGames()
     {
-        SceneManager.LoadScene("ArkanoidMainMenu");
+        PlayerPrefs.SetString("questArkanoidCompleted", "yes");
+        SceneManager.LoadScene(goToScene);
+    }
+
+    public void Return()
+    {
+        GoToMainMenuMiniGames();
     }
 }
