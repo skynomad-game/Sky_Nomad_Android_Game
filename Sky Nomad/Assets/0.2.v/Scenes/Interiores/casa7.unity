@@ -2588,30 +2588,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
---- !u!1 &255212230 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3716657609358140068, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
-  m_PrefabInstance: {fileID: 255212229}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &255212231 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3716657609072828150, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
-  m_PrefabInstance: {fileID: 255212229}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &255212232 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3716657607730961713, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
-  m_PrefabInstance: {fileID: 255212229}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &255212233 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3716657609072828151, guid: dff06c1638957d04885c4700eeeb9856, type: 3}
   m_PrefabInstance: {fileID: 255212229}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &316043233
@@ -9588,13 +9567,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba14799e012b604b80e22d7d77a4407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
   speed: 1.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
-  comeFromQuest: 0
   playerCapCol: {fileID: 0}
 --- !u!1 &62683329126366645
 GameObject:
@@ -12410,7 +12387,7 @@ RectTransform:
   - {fileID: 1380287245710330867}
   - {fileID: 5722703234503921779}
   m_Father: {fileID: 5003505278826629429}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13225,8 +13202,8 @@ RectTransform:
   - {fileID: 8288529899789135515}
   - {fileID: 8288529901160462681}
   - {fileID: 6775904338674188424}
-  - {fileID: 255212231}
   - {fileID: 1380287246349435258}
+  - {fileID: 255212231}
   m_Father: {fileID: 8288529900846967699}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15484,7 +15461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8288529900076855427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18175,13 +18152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba14799e012b604b80e22d7d77a4407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
   speed: 1.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
-  comeFromQuest: 0
   playerCapCol: {fileID: 0}
 --- !u!70 &8355813972776098388
 CapsuleCollider2D:
@@ -18946,13 +18921,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba14799e012b604b80e22d7d77a4407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
   speed: 1.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
-  comeFromQuest: 0
   playerCapCol: {fileID: 0}
 --- !u!70 &8355813973932801668
 CapsuleCollider2D:
@@ -19287,12 +19260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newPlaceName: town
   uuid: portal7
-  goInside: 0
-  goOutside: 1
-  facingDirection: {x: 0, y: -1}
-  loadingScreen: {fileID: 255212233}
-  loadingText: {fileID: 255212232}
-  loadingIcon: {fileID: 255212230}
 --- !u!222 &8465703356284009217
 CanvasRenderer:
   m_ObjectHideFlags: 0
