@@ -7,7 +7,8 @@ public class SFXType : MonoBehaviour
     public enum SoundType
     {
         CURRUCA_CAPIROTADA,
-        MIRLO_COMUN
+        MIRLO_COMUN,
+        OLAS
     }
 
     public SoundType type;

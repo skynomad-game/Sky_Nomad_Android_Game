@@ -12,6 +12,7 @@ public class AnimManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public Image avatarImage;
     public bool dialogueActive;
+    public AudioManager audioManager;
 
     public GameObject[] nextAnimNPC;
 

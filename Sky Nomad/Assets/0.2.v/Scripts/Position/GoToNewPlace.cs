@@ -56,17 +56,9 @@ public class GoToNewPlace : MonoBehaviour
             if (asyncLoad.progress >= .9f)
             
             {
-                loadingText.text = "Nueva escena cargada \n Pulsa para continuar";
                 loadingIcon.SetActive(false);
-
-                if (Input.anyKeyDown)
-                {
-                    asyncLoad.allowSceneActivation = true;
-
-                    Time.timeScale = 1f;
-                }
+                asyncLoad.allowSceneActivation = true;
             }
-
             yield return null;
         }
     }

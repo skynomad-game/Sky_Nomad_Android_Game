@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource[] audioTracks;
+    public List<AudioSource> audioTracks= new List<AudioSource>();
     public int currentTrack;
     public bool audioCanBePlayed = false;
+
+    private void Start()
+    {
+        foreach (Transform t in transform)
+        {
+            audioTracks.Add(t.gameObject.GetComponent<AudioSource>());
+        }
+    }
 
     // Update is called once per frame
     void Update()

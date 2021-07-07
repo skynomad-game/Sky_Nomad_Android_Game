@@ -8,9 +8,13 @@ public class StartAnimCharacters : MonoBehaviour
 
     public GameObject parentPanel;
 
+    public AudioManager audioManager;
+
     public void DisablePanelText()
     {
         firstCharacter.SetActive(true);
         parentPanel.SetActive(false);
+        audioManager.PlayNewTrack(1);
+
     }
  }

@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Minijuegos/Sliding Tile Puzzle Game/Scenes/SlidingTilePuzzle.unity
     guid: c78156a8d0505db48bc2d754df2cd940
   - enabled: 1
-    path: Assets/0.2.v/_Group Memebers/Cristina/Arkanoid/Scene/ArkanoidScene.unity
+    path: Assets/Minijuegos/Arkanoid/Scene/ArkanoidScene.unity
     guid: 1c4ebb5911ce7ff4b9ed43eb6991b7f0
   - enabled: 1
     path: Assets/Minijuegos/Ordenar Frases/Scenes/Enigma Frase.unity

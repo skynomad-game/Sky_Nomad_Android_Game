@@ -127,16 +127,10 @@ public class SelectCharacter : MonoBehaviour
         {
             if (asyncLoad.progress >= .9f)
             {
-                loadingText.text = "Pulsa para continuar";
                 PlayerPrefs.GetInt("personajeEscogido", 0);
                 loadingIcon.SetActive(false);
+                asyncLoad.allowSceneActivation = true;
 
-                if (Input.anyKeyDown)
-                {
-                    asyncLoad.allowSceneActivation = true;
-
-                    Time.timeScale = 1f;
-                }
             }
 
             yield return null;
