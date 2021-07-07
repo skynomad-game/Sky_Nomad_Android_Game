@@ -15,7 +15,7 @@ public class Quest : MonoBehaviour
     public bool puzzleQuest;
     public bool platformQuest;
     public bool arkanoidQuest;
-
+    public bool memoryQuest;
 
     public string title;
     public string startText;
@@ -47,6 +47,7 @@ public class Quest : MonoBehaviour
     public string questScene;
 
     public GameObject itemLogro;
+
 
 
     void Start()
@@ -242,6 +243,11 @@ public class Quest : MonoBehaviour
             {
                 Debug.Log("La quest número " + questID + " es de Arkanoid");
                 isCompleted = PlayerPrefs.GetString("questArkanoidCompleted", "no");
+            }
+            else if (memoryQuest)
+            {
+                Debug.Log("La quest número " + questID + " es de Memory");
+                isCompleted = PlayerPrefs.GetString("questMemoryCompleted", "no");
             }
         }
 

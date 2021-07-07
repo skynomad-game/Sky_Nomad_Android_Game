@@ -29,11 +29,15 @@ public class SFXManagerSingleton: MonoBehaviour
         audios = new List<GameObject>();
 
         GameObject sounds = GameObject.Find("Sounds");
-        foreach (Transform t in sounds.transform)
+        if (sounds != null)
         {
-            audios.Add(t.gameObject);
+            foreach (Transform t in sounds.transform)
+            {
+                audios.Add(t.gameObject);
+            }
+            Debug.LogFormat("Los audios son" + audios.Count);
         }
-        Debug.LogFormat("Los audios son" + audios.Count);
+      
     }
 
     private List <GameObject> audios;

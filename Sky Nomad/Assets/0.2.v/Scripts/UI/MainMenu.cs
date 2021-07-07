@@ -19,7 +19,17 @@ public class MainMenu : MonoBehaviour
 
     public TextMeshProUGUI textButtonStart;
 
-  
+    public GameObject continueButton;
+
+    private void Start()
+    {
+        if (!PlayerPrefs.GetString("introMade", "no").Equals("no"))
+        {
+            continueButton.GetComponent<Button>().enabled = true;
+            continueButton.GetComponent<Image>().color = Color.white;
+        }
+    }
+
     public void StartGame()
     {
         //SceneManager.LoadScene(firstLevel);
@@ -72,15 +82,8 @@ public void QuitGame() {
         {
             if (asyncLoad.progress >= .9f)
             {
-                loadingText.text = "Pulsa para continuar";
                 loadingIcon.SetActive(false);
-
-                if (Input.anyKeyDown)
-                {
-                    asyncLoad.allowSceneActivation = true;
-
-                    Time.timeScale = 1f;
-                }
+                asyncLoad.allowSceneActivation = true;
             }
 
             yield return null;

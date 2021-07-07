@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Text;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 
 public class UIManager : MonoBehaviour
@@ -24,6 +25,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject confirmationPannel;
 
+    private string sceneToReturn;
+
     private void Start()
     {
         objectManager = FindObjectOfType<ObjectManager>();
@@ -31,6 +34,7 @@ public class UIManager : MonoBehaviour
         inventoryPanel.SetActive(false);
         menuPanel.SetActive(false);
         questManager = FindObjectOfType<QuestManager>();
+        StopAllCoroutines();
     }
 
 
