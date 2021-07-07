@@ -37,8 +37,8 @@ public class GoToNewPlace : MonoBehaviour
             Debug.Log(FindObjectOfType<PlayerController>().nextUuid);
             PlayerPrefs.SetString("playerNextUuid", uuid);
             PlayerPrefs.SetString("comeFromquest", "no");
-            //SceneManager.LoadScene(newPlaceName);
-            StartCoroutine(GoToNewScene());
+            SceneManager.LoadScene(newPlaceName);
+            //StartCoroutine(GoToNewScene());
         }
     }
 
@@ -54,14 +54,18 @@ public class GoToNewPlace : MonoBehaviour
         while (!asyncLoad.isDone)
         {
             if (asyncLoad.progress >= .9f)
-            
-            {
+
+            {                
+                
                 loadingIcon.SetActive(false);
                 asyncLoad.allowSceneActivation = true;
+                Time.timeScale = 1f;
             }
+
             yield return null;
         }
-    }
 
+
+    }
 
 }

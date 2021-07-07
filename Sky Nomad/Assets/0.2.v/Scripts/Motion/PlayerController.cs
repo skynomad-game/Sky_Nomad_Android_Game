@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         playerCreated = true;
         //nextUuid = "origin";
         isTalking = false;
+        StopAllCoroutines();
     }
 
     // Update is called once per frame
