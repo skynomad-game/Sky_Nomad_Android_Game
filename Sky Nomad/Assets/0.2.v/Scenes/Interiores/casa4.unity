@@ -446,7 +446,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -688,7 +688,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2
+  orthographic size: 1.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19217,7 +19217,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -19727,7 +19727,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
