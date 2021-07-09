@@ -59,12 +59,15 @@ public class QuestManager : MonoBehaviour
     {
         Debug.Log("Ha aceptado la misión");
         dialogueManager.ShowDialogue(new string[] { quests[actualQuest].acceptQuestText }, quests[actualQuest].npcSprite);
-        quests[actualQuest].questCompleted = true;
+        //quests[actualQuest].questCompleted = true;
         DisableConfirmation();
         StartCoroutine(Utilities.LoadTwoSeconds());
         playerController.SavePlayerPosition();
         cameraFollow.SaveCameraPosition();
+        if (!quests[actualQuest].needsItem) {
         SceneManager.LoadScene(quests[actualQuest].questScene);
+        }
+        
     }
 
     public void DenyQuest()

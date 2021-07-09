@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
         playerCreated = true;
         //nextUuid = "origin";
         isTalking = false;
+        StopAllCoroutines();
     }
 
     // Update is called once per frame
@@ -146,7 +147,7 @@ public class PlayerController : MonoBehaviour
         if (!walking)
         {
             _rigidBody.velocity = Vector2.zero;
-            Debug.Log(nextUuid);
+            //Debug.Log(nextUuid);
         }
 
 #if UNITY_STANDALONE_WIN
@@ -186,7 +187,7 @@ public class PlayerController : MonoBehaviour
         Vector3 playerStartPosition = Vector3.zero;
         Debug.Log(PlayerPrefs.GetString("comeFromquest", "no"));
 		
-        if ( PlayerPrefs.GetString("comeFromquest", "no") == "yes" )
+        if ( PlayerPrefs.GetString("comeFromquest", "no").Equals("yes"))
         //si la nextUuid que tiene el personaje es "froPuzzle"
         {
             Debug.Log("Se va a cargar la última posición conocida");
