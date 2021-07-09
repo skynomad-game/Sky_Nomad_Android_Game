@@ -280,7 +280,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 0.7
+  speed: 0.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -18117,7 +18117,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 0.7
+  speed: 0.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -18593,7 +18593,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 0.7
+  speed: 0.5
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0

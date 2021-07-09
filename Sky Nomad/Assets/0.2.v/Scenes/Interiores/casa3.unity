@@ -277,7 +277,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 62683329104657201}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.413, y: 3.94, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 6272683650710794140}
   m_Father: {fileID: 8355813973574056574}
@@ -19162,7 +19162,7 @@ Transform:
   m_GameObject: {fileID: 8355813972798463189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.911, y: 4.064, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 8355813974637216610}
   m_Father: {fileID: 8355813973574056574}
@@ -19223,7 +19223,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -19836,7 +19836,7 @@ Transform:
   m_GameObject: {fileID: 8355813973923674117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.81, y: 3.91, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 8355813973699638458}
   m_Father: {fileID: 8355813973574056574}
@@ -19897,7 +19897,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 0.7
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
