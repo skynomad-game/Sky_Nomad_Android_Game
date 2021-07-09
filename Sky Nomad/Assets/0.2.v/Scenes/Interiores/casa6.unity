@@ -23757,7 +23757,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 1
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -33075,7 +33075,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 1
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -33667,7 +33667,7 @@ MonoBehaviour:
   cameraPos: {fileID: 0}
   canMove: 1
   isTalking: 0
-  speed: 1.5
+  speed: 1
   lastMovement: {x: 0, y: 0}
   nextUuid: 
   comeFromQuest: 0
@@ -34074,7 +34074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPlaceName: town
-  uuid: portal1
+  uuid: portal6
   goInside: 0
   goOutside: 1
   facingDirection: {x: 0, y: 0}
